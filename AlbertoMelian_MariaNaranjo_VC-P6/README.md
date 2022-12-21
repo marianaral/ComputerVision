@@ -1,8 +1,11 @@
-## Práctica 6. Análisis facial
-
-### Alberto Melián Rodríguez y María Naranjo Almeida
+# Práctica 6. Análisis facial
 
 Se ha desarrollado un sistema de identificación de personas. Si la persona no está registrada en el sistema, se le comunica y se le ofrece la posibilidad de registrarse. Además, cuando se reconoce que el usuario está registrado, nos ofrece información sobre su estado de ánimo.
+
+## Contributors
+[María Naranjo Almeida](https://github.com/marianaral)
+
+[Alberto Melián Rodríguez](https://github.com/Aeronpsaro)
 
 ### Procedimiento ###
 Los usuarios que están registrados, tendrán, al menos, una imagen de su cara dentro de la carpeta Registered. Cuando se inicia el programa, éste muestra la cámara y comprueba que la cara que se ve en la cámara tiene un parecido con alguna cara registrada (la similitud de tiene que ser mayor a un umbral, en este caso se ha establecido en un 60%). Si ninguna cara registrada coincide, informa de tal situación y se ofrece la posibilidad registrarse, ejecutando otra celda. 
