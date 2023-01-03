@@ -35,7 +35,7 @@ Finalmente, los resultados obtenidos del último entrenamiento descrito fueron s
 
 Entrenamiento:
 
-[Vídeo de evaluación del entrenamiento]()
+[Vídeo de evaluación del entrenamiento](https://alumnosulpgc-my.sharepoint.com/:v:/g/personal/maria_naranjo123_alu_ulpgc_es/ERc6ISYhJ2ZEkp3vu3cxxxkBrRmfShoXwdKEkXFQjO919Q?e=5UYxHJ)
 
 
 Tras lo descrito en el procedimiento, se puede concluir:
