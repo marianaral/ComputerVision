@@ -56,6 +56,8 @@ Tras lo descrito en el procedimiento, se puede concluir:
 
 - [Notebook de Google Colab en el que se ha basado el de este proyecto](https://colab.research.google.com/drive/1X9A8odmK4k6l26NDviiT6dd6TgR-piOa#scrollTo=0W0MpUaTCJro)
 
+- [Vídeo utilizado para comprobar los resultados del entrenamiento](https://www.youtube.com/watch?v=KKx_RPi-lgo)
+
 ## Autores
 
 - [María Naranjo Almeida](https://github.com/marianaral)
