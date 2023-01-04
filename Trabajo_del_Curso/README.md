@@ -73,7 +73,21 @@ vid.release()
 cv2.destroyAllWindows()
 ```
 
-El siguiente paso consiste en 
+El siguiente paso consiste en utilizar la librería Mediapipe para detectar las manos. En primer lugar, se inicializan las variables básicas:
+
+```
+mpHands = mp.solutions.hands
+hands = mpHands.Hands()
+mpDraw = mp.solutions.drawing_utils
+```
+
+Y en el bucle de la cámara, tenemos que utilizar el frame actual como imagen para que la librería Mediapipe la procese y empiece a detectar las manos.
+
+```
+imageRGB = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
+results = hands.process(imageRGB)
+```
+
 
 ## Fuentes y tecnologías utilizadas
 
