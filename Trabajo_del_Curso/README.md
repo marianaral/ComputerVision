@@ -11,6 +11,8 @@ En este proyecto se ha realizado una pequeña aplicación del conocido juego de 
 
 [Objetivo]()
 
+[Controles](#controles)
+
 [Procedimiento](#procedimiento)
 
 [Descripción técnica](#descripción-técnica)
@@ -24,6 +26,16 @@ En este proyecto se ha realizado una pequeña aplicación del conocido juego de 
 [Autores](#autores)
 
  ---
+
+## Controles
+
+Para poder realizar todas las posibilidades que ofrece este programa, es necesario conocer como se controla:
+
+1. Para poder dibujar, se tiene que utilizar la mano derecha. A continuación se levanta uno o varios dedos. Según el número de dedos que se levanten, el grosor del trazo será mayor o menor. Si se cierra la mano derecha, ningún trazo se dibujará.
+
+2. Para borrar alguna parte del dibujo, se tiene que utilizar la mano izquierda cerrada y moverla por la zona a eliminar.
+
+3. Para cambiar el color de lo que se ha dibujado, levante el dedo índice de la mano izquierda y muévalo horizonalmente para escoger color.
 
 
 ## Procedimiento
