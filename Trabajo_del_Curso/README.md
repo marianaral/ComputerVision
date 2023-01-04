@@ -11,9 +11,9 @@ En este proyecto se ha realizado una pequeña aplicación del conocido juego de 
 
 [Objetivo]()
 
-[Descripción técnica]()
+[Procedimiento](#procedimiento)
 
-[Procedimiento]()
+[Descripción técnica](#descripción-técnica)
 
 [Fuentes y tecnologías utilizadas](#fuentes-y-tecnologías-utilizadas)
 
@@ -40,10 +40,40 @@ A continuación, instalamos todas las librerías necesarias para la realización
 ```
 pip install mediapipe 
 pip install opencv-python
+```
+Tras las instrucciones anteriores, ya se tiene el entorno preparado para realizar la práctica 
+
+## Descripción técnica
+
+Una vez listo el entorno con las librerías necesarias, lo primero que hay que realizar es la importación de las librerías y la iniciación de la cámara del equipo, como se ha hecho en proyectos anteriores.
 
 ```
+import cv2
+import mediapipe as mp
+import numpy as np
 
+vid = cv2.VideoCapture(0)
 
+while(True): 
+    ret, frame = vid.read()
+    
+    #Se hace flip del frame para hacer efecto espejo
+    frame = cv2.flip(frame,1)
+ 
+    cv2.imshow("Pictionary", frame)
+    cv2.waitKey(1)
+
+    # Detenemos pulsado ESC
+    if cv2.waitKey(20) == 27:
+         break
+  
+# Libera el objeto de captura
+vid.release()
+# Destruye ventanas
+cv2.destroyAllWindows()
+```
+
+El siguiente paso consiste en 
 
 ## Fuentes y tecnologías utilizadas
 
