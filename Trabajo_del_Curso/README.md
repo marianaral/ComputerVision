@@ -128,6 +128,10 @@ Para obtener la cuenta de los dedos mostrados, hay que analizar los landmarks de
 
 Lo descrito anteriormente es cierto en los casos de los dedos, pero no de los pulgares. Estos no se cierran verticalmente, sino horizontalmente, por lo tanto, lo que hay que comprobar si la posición en x de la punta del pulgar está a la derecha o a la izquierda de la articulación que une el metacarpiano con la primera falange (articulación metacarpofalángica). Además, según la mano en la que sea, si la punta está más hacia la derecha puede significar que el dedo está abierto (mano derecha) o cerrado (dedo izquierdo).
 
+|![Mano derecha abierta](dcha_abierta.jpg) ![Mano derecha cerrada](dcha_cerrada.jpg)|
+|:--:|
+|Imágenes de la mano derecha abierta y cerrada|
+
 
 ## Fuentes y tecnologías utilizadas
 
