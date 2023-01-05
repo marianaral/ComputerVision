@@ -124,7 +124,7 @@ Con todo lo descrito anteriormente, se puede proceder a la utilización de estos
 
 De esta manera, se ha desarrollado la función denominada _countFingers()_, que toma como parámetros de entrada los landmarks y a qué mano corresponden dichos landmarks (``` results.multi_handedness[0].classification[0].label ```). Devuelve un array con las coordenadas x, y de la parte de la mano a trackear (se explicará a qué hace referencia esto más adelante) y cuántos dedos está mostrando.
 
-Para obtener la cuenta de los dedos mostrados, hay que analizar los landmarks de cada uno.
+Para obtener la cuenta de los dedos mostrados, hay que analizar los landmarks de cada uno. Como se pueden ver en las imágenes siguientes, cuando una mano se cierra, la posición de la punta de los dedos y<sub>t</sub> cambia en el sentido de las y, mientras que la articulación que une la falange proximal con la media del dedo y<sub>p</sub> se mantiene, aproximadamente, en la misma posición en la y. Es por ello que para conocer cuántos dedos hay abiertos, hay que comparar si la posición en y de la punta del dedo está por encima (abierto) o por debajo (cerrado) de la articulación nombrada.
 
 
 ## Fuentes y tecnologías utilizadas
