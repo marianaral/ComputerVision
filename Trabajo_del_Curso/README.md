@@ -121,6 +121,14 @@ results = hands.process(imageRGB)
 
 ## Propuesta de ampliación y posibles mejoras
 
+Una vez analizada la capacidad de la aplicación, se han sugerido poder hacer las siguientes ampliaciones/mejoras:
+
+- Incluir el proyecto en una aplicación de realidad aumentada, donde los jugadores que tienen que ver/adivinar lo que está dibujando otra persona lo pueda ver desde su propio dispositivo móvil.
+
+- Los trazos que son dibujados sean más fluídos.
+
+- Al cambiar de color, solo se cambie el color del trazo actual y no del dibujo entero.
+
 ## Créditos materiales no originales
 
 - [Utilización de la librería Mediapipe para la detección de la mano](https://www.section.io/engineering-education/creating-a-hand-tracking-module/#:~:text=Hand%20tracking%20using%20MediaPipe%20involves%20two%20stages%3A%201,landmarks%20on%20the%20cropped%20image%20of%20the%20hand.)
