@@ -31,7 +31,11 @@ En este proyecto se ha realizado una pequeña aplicación del conocido juego de 
  
 ## Motivación
 
+Durante la época de navidad, los amigos y familias se reúnen para pasar las fiestas. Sin embargo, en ocasiones ocurre que hay silencios incómodos o tardes aburridas por falta de actividades que hacer en conjunto. Es por ello que se ha desarrollado este juego del Pictionary, en el cual, con solamente un ordenador y un televisor, todos los asistentes pueden pasar una tarde entretenida y accesible para todas las edades.
+
 ## Objetivo
+
+El mayor objetivo de este proyecto es que los usuarios que lo utilicen, puedan dibujar libremente, de manera fácil e intuitiva.
 
 ## Controles
 
