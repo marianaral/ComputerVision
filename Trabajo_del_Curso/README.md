@@ -7,9 +7,9 @@ En este proyecto se ha realizado una pequeña aplicación del conocido juego de 
 
 ### Índice
 
-[Motivación]()
+[Motivación](#motivación)
 
-[Objetivo]()
+[Objetivo](#objetivo)
 
 [Controles](#controles)
 
@@ -19,13 +19,19 @@ En este proyecto se ha realizado una pequeña aplicación del conocido juego de 
 
 [Fuentes y tecnologías utilizadas](#fuentes-y-tecnologías-utilizadas)
 
-[Conclusiones]()
+[Conclusiones](#conclusiones)
 
-[Créditos materiales no originales]()
+[Propuesta de ampliación y posibles mejoras](#propuesta-de-ampliación-y-posibles-mejoras)
+
+[Créditos materiales no originales](#créditos-materiales-no-originales)
 
 [Autores](#autores)
 
  ---
+ 
+## Motivación
+
+## Objetivo
 
 ## Controles
 
@@ -110,6 +116,10 @@ results = hands.process(imageRGB)
 - [OpenCV](https://opencv.org/)
 
 - [Guiones de las prácticas de la asignatura](https://github.com/otsedom/otsedom.github.io/tree/main/VC)
+
+## Conclusiones
+
+## Propuesta de ampliación y posibles mejoras
 
 ## Créditos materiales no originales
 
