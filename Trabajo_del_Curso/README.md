@@ -112,8 +112,19 @@ imageRGB = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
 results = hands.process(imageRGB)
 ```
 
-Lo siguiente que se desea hacer es utilizar la información obtenida de las manos. Es por ello que se ha utilizado el atributo _multi_hand_landmarks_ del objeto _results_. Los landmarks o puntos de referencia de la mano hacen referencia a la localización de los 21 puntos importantes de la mano, según a definido Mediapipe. Estos landmarks son:
+Lo siguiente que se desea hacer es utilizar la información obtenida de las manos. Es por ello que se ha utilizado el atributo _multi_hand_landmarks_ del objeto _results_. Los landmarks o puntos de referencia de la mano hacen referencia a la localización de los 21 puntos importantes de la mano, según ha definido Mediapipe. Estos landmarks son:
 
+|![Landmarks](hand_landmarks.png)|
+|:--:|
+|Imagen obtenida de la [documentación oficial](https://google.github.io/mediapipe/solutions/hands)|
+
+Con esa información ya se conocen las coordenadas nnormalizadas de los landmarks. Además, para conocer si la mano que se está mostrando es la derecha o la izquierda, hay que usar otro atributo del objeto _results_ denominado _multi_handedness_, el cual tiene dos propiedades: la etiqueta o label que indica si la mano es la derecha o la izquierda y el score o puntuación que informa sobre la probabilidad de que lo detectado es una mano.
+
+Con todo lo descrito anteriormente, se puede proceder a la utilización de estos datos para saber si tenemos alguna mano en el frame o no, comprobando que exista _results.multi_hand_landmarks_. También, con tal información, se puede saber si tenemos la mano cerrada o abierta y, en tal caso, cuantos dedos se están mostrando. 
+
+De esta manera, se ha desarrollado la función denominada _countFingers()_, que toma como parámetros de entrada los landmarks y a qué mano corresponden dichos landmarks (``` results.multi_handedness[0].classification[0].label ```). Devuelve un array con las coordenadas x, y de la parte de la mano a trackear (se explicará a qué hace referencia esto más adelante) y cuántos dedos está mostrando.
+
+Para obtener la cuenta de los dedos mostrados, hay que analizar los landmarks de cada uno.
 
 
 ## Fuentes y tecnologías utilizadas
