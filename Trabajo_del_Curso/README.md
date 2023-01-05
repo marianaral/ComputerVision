@@ -1,7 +1,7 @@
 # Trabajo del Curso de la asignatura de Visión por Computador - Pictionary
 
 
-En este proyecto se ha realizado una pequeña aplicación del conocido juego de Pictionary, utilizando la visión por computador
+En este proyecto se ha realizado una aplicación del conocido juego de Pictionary, utilizando la visión por computador
 
  ---
 
@@ -35,7 +35,7 @@ Durante la época de navidad, los amigos y familias se reúnen para pasar las fi
 
 ## Objetivo
 
-El mayor objetivo de este proyecto es que los usuarios que lo utilicen, puedan dibujar libremente, de manera fácil e intuitiva.
+El mayor objetivo de este proyecto es que los usuarios que lo utilicen, puedan dibujar libremente, de manera fácil e intuitiva. Además de familiarizarse con la librería de Mediapipe y, en concreto, con el uso de la detección de manos para obtener gestos y seguimiento de las mismas.
 
 ## Controles
 
@@ -160,7 +160,7 @@ Una vez analizado las manos, dedos de las manos e insertados los valores en las 
 arr = np.transpose((drawn > 0).nonzero())
 ```
 
-Finalmente, se recorre _arr_ y se pinta un círculo en las posiciones (arr[i][0], arr[i][1]), donde arr[i][0] es la posición x del elemento i, y la arr[i][1] es la coordenada y del elemento i; con el grosor de 4 * thickness[arr[i][0], arr[i][1]].
+Finalmente, se recorre _arr_ y se pinta un círculo en las posiciones (arr[i][0], arr[i][1]), donde arr[i][0] es la posición x del elemento i, y arr[i][1] es la coordenada y del elemento i; con el grosor de 4 * thickness[arr[i][0], arr[i][1]].
 
 ```
 for i in range(len(arr)):
@@ -180,6 +180,9 @@ for i in range(len(arr)):
 - [Partes de una mano](https://enfermeria.top/apuntes/anatomia/miembro-superior/articulaciones/#ligamentos-8)
 
 ## Conclusiones
+
+Mediapipe es una herramienta muy potente para el seguimiento de las manos y obtener sus gestos y sus aplicaciones pueden ser muy variadas. Desde crear un juego sencillo hasta poder tener un traductor de lengua de signos. Cabe destacar que la herramienta dispone de muchas más soluciones, como detección y seguimiento de iris, pose del cuerpo humano...
+
 
 ## Propuesta de ampliación y posibles mejoras
 
