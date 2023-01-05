@@ -103,12 +103,17 @@ hands = mpHands.Hands()
 mpDraw = mp.solutions.drawing_utils
 ```
 
-Y en el bucle de la cámara, tenemos que utilizar el frame actual como imagen para que la librería Mediapipe la procese y empiece a detectar las manos.
+Además, existe una variable de configuración (MAX_NUM_HANDS) que permite establecer el número máximo de manos que se detectan. Por defecto es dos, que es lo deseado y, por lo tanto, no se ha tenido que modificar.
+
+Seguidamente, en el bucle de la cámara, tenemos que utilizar el frame actual como imagen para que la librería Mediapipe la procese y empiece a detectar las manos. En la variable _results_ se almacena el objeto de Mediapipe que contiene toda la información del procesamiento de las manos.
 
 ```
 imageRGB = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
 results = hands.process(imageRGB)
 ```
+
+Lo siguiente que se desea hacer es utilizar la información obtenida de las manos. Es por ello que se ha utilizado el atributo _multi_hand_landmarks_ del objeto _results_. Los landmarks o puntos de referencia de la mano hacen referencia a la localización de los 21 puntos importantes de la mano, según a definido Mediapipe. Estos landmarks son:
+
 
 
 ## Fuentes y tecnologías utilizadas
@@ -132,6 +137,8 @@ Una vez analizada la capacidad de la aplicación, se han sugerido poder hacer la
 - Los trazos que son dibujados sean más fluídos.
 
 - Al cambiar de color, solo se cambie el color del trazo actual y no del dibujo entero.
+
+- Dar la posibilidad al usuario de definir con qué mano desea dibujar.
 
 ## Créditos materiales no originales
 
