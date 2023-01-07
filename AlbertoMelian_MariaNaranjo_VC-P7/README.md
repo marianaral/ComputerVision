@@ -28,14 +28,14 @@ Tras ello, se realizó el entrenamiento utilizando los parámetros sugeridos en 
 
 Es entonces cuando se decidió aumentar un poco más el dataset con figuras de legos más variadas, ya que la mayoría eran imágenes de Lego Star Wars y podría influenciar a los resultados. Por ello, se añadieron fotografías de Lego Marvel. Tras esta acción, no se estaba conforme con los resultados, así que se volvió a aumentar el batch a 16 y las épocas a 90.
 
-Finalmente, los resultados obtenidos del último entrenamiento descrito fueron satisfactorios. En este [enlace](https://alumnosulpgc-my.sharepoint.com/:u:/g/personal/maria_naranjo123_alu_ulpgc_es/EQj5jFlGzyNNrsV5XXy7ZhYBB2HlYsfEezDpeRQ-R56gtA?e=uq6Dm2) se pueden descargar los pesos de la red una vez entrenada.
+Finalmente, los resultados obtenidos del último entrenamiento descrito fueron satisfactorios. En este [enlace](https://alumnosulpgc-my.sharepoint.com/:f:/g/personal/maria_naranjo123_alu_ulpgc_es/EjFYyAG-kUJCs7tnSK79tvoBsv1VZqYE6umI_jeDo5EXXw?e=1zJxSF) se pueden descargar los pesos de la red una vez entrenada.
 
 
 ## Resultados
 
 Entrenamiento:
 
-[Vídeo de evaluación del entrenamiento](https://alumnosulpgc-my.sharepoint.com/:v:/g/personal/maria_naranjo123_alu_ulpgc_es/ERc6ISYhJ2ZEkp3vu3cxxxkBrRmfShoXwdKEkXFQjO919Q?e=5UYxHJ)
+[Vídeo de evaluación del entrenamiento](https://alumnosulpgc-my.sharepoint.com/:f:/g/personal/maria_naranjo123_alu_ulpgc_es/EjFYyAG-kUJCs7tnSK79tvoBsv1VZqYE6umI_jeDo5EXXw?e=1zJxSF)
 
 
 Tras lo descrito en el procedimiento, se puede concluir:
