@@ -150,9 +150,11 @@ Lo descrito anteriormente es cierto en los casos de los dedos, pero no de los pu
 
 La parte de la mano a seguir hace referencia a que si se está usando la mano derecha y se quiere pintar, se utilizará la posición (x, y) de la punta del dedo índice (INDEX_FINGER_TIP) para formar el trazo, como si se tratase la punta de un lápiz o pincel. Con tal información, se marca con un 1 la posición (x, y) de la matriz denominada _drawn_, que tiene las mismas dimensiones del frame. Con esta estructura se define por qué pixels ha pasado el dedo  y, por lo tanto, se ha querido pintar. En adición, con la información del número de dedos mostrados, se marca dicha cuenta en la posición (x,y) de la matriz _thickness_, también de las mismas dimensiones del frame. Esta estructura informa sobre qué grosor hay que utilizar para dibujar el trazo. A mayor número de dedos mostrados, más grueso es.
 
-Para la mano izquierda existen dos posibles acciones:
+Para la mano izquierda existen tres posibles acciones:
 
 - Borrar: si no se muestra ningún dedo, y por lo tanto se cierra el puño, se toma la articulación interfalangiana del dedo corazón (mpHands.HandLandmark.MIDDLE_FINGER_PIP) como si se tratase de una goma. Con su posición (x,y), se marca con un 0 en la posición (x,y) de la matriz _drawn_, para indicar que ahí no hay que dibujar. Sin embargo, tras la realización de diversas pruebas, se concluyó que al ser la coincidencia con un pixel exacto es muy complicado, se marcan a 0 los 20 píxeles a izquierda y derecha y arriba y abajo del punto (x,y), formándose una goma de 40x40. 
+
+- Borrar todo: si todos los dedos de la mano izquierda menos el pulgar están cerrados y el pulgar está más arriba por una cierta altura umbral de su articulación interfalangiana y la del dedo índice (si no se activaría esta acción al cerrar la mano) se borra la escena entera, retornando a los valores de inicio.
 
 - Para cambiar de color: si se muestra algún dedo (independientemente de cuál sea), se toman las coordenadas en x de la punta del dedo índice para seleccionar un color. Para obtener el color, se llama a una función denominada _ObtainColor_, la cual normaliza la posición en x en un valor dentro del rango [0,255] y lo mapea entre rojo y azul.
 
@@ -166,8 +168,10 @@ Finalmente, se recorre _arr_ y se pinta un círculo en las posiciones (arr[i][0]
 
 ```
 for i in range(len(arr)):
-    cv2.circle(frame, (arr[i][0], arr[i][1]), 4 * int(thicknes[arr[i][0], arr[i][1]]) , (R, G, B), cv2.FILLED)
+	cv2.circle(frame, (arr[i][0], arr[i][1]), 4 * int(thicknes[arr[i][0], arr[i][1]]) , ObtainColorFromPosition(arr[i][0],arr[i][1]), cv2.FILLED)
 ```
+
+La tríada del color se obtiene de la función _ObtainColorFromPosition_, que accede a las tres matrices de color de la escena en los índices que se le pasan.
 
 ## Fuentes y tecnologías utilizadas
 
@@ -194,7 +198,7 @@ Una vez analizada la capacidad de la aplicación, se han considerado de interés
 
 - Aumentar la fluidez del trazado.
 
-- Conseguir que al cambiar de color solo se cambie el color del trazo actual y no del dibujo entero.
+- Usar diversos pinceles en función del gesto escogido.
 
 - Dar la posibilidad al usuario de definir con qué mano desea dibujar.
 
