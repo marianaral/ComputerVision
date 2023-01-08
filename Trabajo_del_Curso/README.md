@@ -25,6 +25,8 @@ En este proyecto consiste en una implementación del conocido juego de Pictionar
 
 [Créditos materiales no originales](#créditos-de-materiales-no-originales)
 
+[Vídeo resumen del trabajo](#vídeo-resumen-del-trabajo)
+
 [Autores](#autores)
 
  ---
@@ -210,6 +212,9 @@ Una vez analizada la capacidad de la aplicación, se han considerado de interés
 
 - [Acceder al atributo label de multi_handedness de Mediapipe](https://stackoverflow.com/questions/67455791/mediapipe-python-link-landmark-with-handedness)
 
+## Vídeo resumen del trabajo
+
+En este [enlace]() puede encontrar el vídeo resumen del trabajo.
 
 ## Autores
 [María Naranjo Almeida](https://github.com/marianaral)
