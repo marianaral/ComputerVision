@@ -1,7 +1,7 @@
 # Trabajo del Curso de la asignatura de Visión por Computador - Pictionary
 
 
-En este proyecto se ha realizado una aplicación del conocido juego de Pictionary, utilizando la visión por computador
+En este proyecto consiste en una implementación del conocido juego de Pictionary utilizando la visión por computador.
 
  ---
 
@@ -41,13 +41,15 @@ El principal objetivo de este proyecto es que los usuarios que lo utilicen, pued
 
 Para aprovechar todas las posibilidades que ofrece este programa, es necesario conocer los controles:
 
-1. Para poder dibujar, se tiene que utilizar la mano derecha. A continuación se levanta uno o varios dedos. Según el número de dedos que se levanten, el grosor del trazo será mayor o menor. Si se cierra la mano derecha, no se dibujará ningún trazo.
+1. Para poder dibujar, se tiene que utilizar la mano derecha. A continuación se levantan uno o varios dedos. Según el número de dedos que se levanten, el grosor del trazo será mayor o menor. Si se cierra la mano derecha, no se dibujará ningún trazo.
 
 2. Para borrar partes del dibujo, se usa la mano izquierda cerrada, moviéndola a través la zona a eliminar.
 
-3. Para cambiar el color de lo que se ha dibujado, levante el dedo índice de la mano izquierda y muévalo horizontalmente. Cuando haya encontrado el color deseado, cierre la mano.
+3. Para borrar el dibujo entero se enseña el pulgar arriba de la mano izquierda.
 
-4. Para cerrar la cámara hay que pulsar el botón «Esc».
+4. Para cambiar el color de lo que se dibuja, se levanta el dedo índice de la mano izquierda y se mueve horizontalmente. Cuando se ha encontrado el color deseado se cierra la mano.
+
+5. Para cerrar la cámara hay que pulsar el botón «Esc».
 
 
 ## Guía de instalación
