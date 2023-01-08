@@ -214,7 +214,7 @@ Una vez analizada la capacidad de la aplicación, se han considerado de interés
 
 ## Vídeo resumen del trabajo
 
-En este [enlace]() puede encontrar el vídeo resumen del trabajo.
+En este [enlace](https://drive.google.com/file/d/16-FovbWCwPkc_seklCVTGRObGYY4p5t8/view?usp=sharing) puede encontrar el vídeo resumen del trabajo.
 
 ## Autores
 [María Naranjo Almeida](https://github.com/marianaral)
